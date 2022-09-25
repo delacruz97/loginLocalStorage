@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Gestor de Economia</h1>
+    <div class="formTask" style="background-color: rgb(144, 88, 135)">
+      <form id="fomularioo">
+        <!-- El "for" en la etiqueta "label" me asocia a mi input -->
+        <div style="margin: 20px auto; font-size: 23px">
+          Tipo de Transaccion:
+
+          <input id="ingreso" type="radio" name="selector" value="Ingreso" />
+          <label for="ingreso">Ingreso</label>
+          <input id="egreso" type="radio" name="selector" value="Egreso" />
+          <label for="egreso">Egreso</label>
+        </div>
+
+        <div>
+          <label for="description"> </label>
+          <input
+            id="description"
+            name="description"
+            type="text"
+            class="center"
+            style="margin: 20px auto"
+            placeholder="Descripcion"
+          />
+        </div>
+        <div>
+          <label for="monto"> </label>
+          <input
+            id="monto"
+            name="monto"
+            type="number"
+            class="center"
+            style="margin: 20px auto"
+            placeholder="Monto"
+          />
+        </div>
+
+        <div>
+          <label for="categoria"> </label>
+          <input
+            id="categoria"
+            name="categoria"
+            type="text"
+            class="center"
+            style="margin: 20px auto"
+            placeholder="Categoria"
+          />
+        </div>
+
+        <button
+          id="botonEnvio"
+          class="btnT"
+          style="margin: 20px auto; font-size: 15px"
+          ;
+        >
+          Añadir
+        </button>
+      </form>
+    </div>
+    <br />
+    <div class="tablet">
+      <table id="tb">
+        <!-- fila = tr -->
+        <tr>
+          <!-- celdas th -> cabecera de la tabla -->
+          <th>Tipo</th>
+          <th>Descripcion</th>
+          <th>Monto</th>
+          <th>Categoria</th>
+        </tr>
+        <tr>
+          <!-- Datos de tabla = td -->
+          <td
+            style="
+              color: rgb(131, 131, 131);
+              background-color: rgb(255, 255, 255);
+            "
+          >
+            Eje: ingreso
+          </td>
+          <td style="color: rgb(131, 131, 131); background-color: aliceblue">
+            Eje: sueldo
+          </td>
+          <td style="color: rgb(131, 131, 131); background-color: aliceblue">
+            Eje: 1000
+          </td>
+          <td style="color: rgb(131, 131, 131); background-color: aliceblue">
+            Eje: trabajo
+          </td>
+        </tr>
+      </table>
+    </div>
+    <style>
+      th {
+        border: solid 5px black;
+        padding: 50px;
+        text-align: center;
+        background-color: rgb(165, 149, 149);
+      }
+      td {
+        border: solid 3px rgb(242, 0, 255);
+        padding: 50px;
+        text-align: center;
+        background-color: rgba(137, 43, 226, 0.475);
+      }
+      .tablet table {
+        margin: 50px auto;
+      }
+    </style>
+
+    <script>
+      const form = document.getElementById("fomularioo");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let formularioData = new FormData(form);
+        let TabletRef = document.getElementById("tb");
+
+        let newTabletRef = TabletRef.insertRow(-1);
+        let newTablet2Ref = newTabletRef.insertCell(0);
+        newTablet2Ref.textContent = formularioData.get("selector");
+
+        newTablet2Ref = newTabletRef.insertCell(1);
+        newTablet2Ref.textContent = formularioData.get("description");
+
+        newTablet2Ref = newTabletRef.insertCell(2);
+        newTablet2Ref.textContent = formularioData.get("monto");
+
+        newTablet2Ref = newTabletRef.insertCell(3);
+        newTablet2Ref.textContent = formularioData.get("categoria");
+      });
+    </script>
+  </body>
+</html>

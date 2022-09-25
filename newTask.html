@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div style="text-align:center; background-color: bisque;">
+        <input type="text" id="texto" class="center" style="border: solid 1px black;" placeholder="new task"> </input>
+        <br/>
+    <input type="button" id="btnAgregarElemento"
+    value="Agregar" onclick="agregarElemento()" class="btnT" style="margin: 10px auto;"></input>
+
+    <input type="button" id="btnMostrarElemento"
+    value="Mostrar" onclick="mostrarElemento()"  class="btnT" style="margin: 10px auto;"></input>
+    </div>
+    <div id="resultado" style="background-color: rgb(170, 102, 254);"></div>
+
+    <script src="./tareas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+.conteiner{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(164, 76, 246, 0.839);
+    align-items: center;
+    text-align: center;
+    border-radius:  5px 5px 55px 5px;
+    margin: 100px auto;
+    border: 3px solid;
+
+}
+
+.center{
+    align-items: center;
+    text-align: center;
+    width: 140px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.linkCenter{
+    text-align: center;
+    margin: 40px auto;
+ 
+}
+
+.centerInput{
+   
+    margin: 5px auto;
+    padding: 10px;
+}
+.btnT{
+    width: 120px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+    
+}
+.bod{background-image: url(./image/login.png);
+
+background-position: center;
+background-repeat: no-repeat;
+
+background-color: rgb(186, 128, 240);}
+
+
+.inicio{
+    margin: 200px auto;
+    padding: 200px auto;
+
+    border: dashed 2px rgb(0, 0, 0);
+    height: 600px;
+    background-image: url("./image/app.png");
+}
+.centrarText{
+    text-align: center;
+    color: rgb(132, 45, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bodyApp{background-color: rgb(85, 65, 105);}
+
+.contenedor{
+    display: inline-grid;
+    
+    width: 200px ;
+    height: 400px;
+    background-color: rgba(117, 218, 255, 0.735);
+    margin: 20px 30px 20px 80px;
+    border-radius: 5px;
+    border: dashed 1px black;
+}
+
+.center1{
+    text-align: center;
+    color: beige;
+    background-color: rgb(21, 20, 20);
+    height: 40px;
+    padding: 10px auto;
+}
+
+.center2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+    height: 40px;
+}
+.imageTarea{
+    background-image: url("./image/imgTarea.png");
+
+background-repeat: no-repeat;
+}
+
+.formTask{
+    width: 500px;
+    height: 400px;
+    
+    align-items: center;
+    text-align: center;
+    border-radius:  5px 5px 55px 5px;
+    margin: 100px auto;
+    border: 3px solid black;
+}
+
+
+/* usuario */
+
+.contPrincipal{
+    background-color: #5865f288;
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
+    padding: 30px 10px 0px 10px;
+
+    border-radius: 10px;
+    border: solid 1px #ffffff;
+
+}
+.contUser{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    border-radius: 15px 15px 15px 15px;
+    border: double 1px rgb(255, 255, 255);
+    margin:  5px 15px 5px 15px;
+    padding: 20px 0px 0px 0px;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YKtYkAqzqjvTDUxl3zU_eAHaEK%26pid%3DApi&f=1") ;
+    background-size: 400px 300px;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+.contUser1{
+    background-color: rgba(82, 17, 247, 0.429);
+    height: 250px;
+    width: 250px;
+    border-radius: 300px 300px 300px 300px;
+    border: double 1px rgb(255, 255, 255);
+    margin:50px auto;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.lDu5d_f2Q1hQ6QOdZkcrcgHaEK%26pid%3DApi&f=1") ;
+    background-size: 250px 250px;
+
+
+}
+.datos{
+    text-align: center;
+    margin: 140px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
