@@ -81,6 +81,18 @@ const valorEmail = (emailValue) => {
 
 //esta funcion es para validar que la contraseña no este vacia
 const valorPassword = (passwordValue) => {
+  if (passwordValue.length <= 3) {
+    const c = document.createTextNode(
+      "Contrasena invalida, longitud minima aceptada '6' caracteres"
+    );
+    const errc = document.querySelector(".errc");
+    errc.appendChild(c);
+  }
+  if (passwordValue.length >= 6) {
+    const errc = document.querySelector(".errc");
+    errc.parentNode.removeChild(errc);
+  }
+
   if (passwordValue.trim()) {
     if (passwordRegex.test(passwordValue)) {
       arrayValidation.push("password");
